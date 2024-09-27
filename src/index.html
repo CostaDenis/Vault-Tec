@@ -9,7 +9,7 @@
 
     <body>
 
-            <div class="bg-yellow-200 h-20 sm:h-18 md:h-24 p-5 flex flex-row 
+            <div class="bg-yellow-200 h-14 sm:h-16 p-5 flex flex-row 
             justify-between items-center w-full">
 
                 <span class="flex justify-center items-center"><img class="h-20 min-w-16 sm:h-24
@@ -34,36 +34,44 @@
         <div class="bg-blue-600 w-full h-auto md:min-h-[32rem] 
          flex flex-col sm:flex-row sm:items-center">
 
+         <div class="text-center md:text-left lg:text-left mb-4 max-w-4xl mx-auto">
+            <p class="text-white font-bold mx-4 sm:mx-8 text-3xl sm:text-4xl lg:text-5xl
+            text-center duration-1000 leading-relaxed mt-6 sm:mt-8 uppercase">"If the worst should happen tomorrow, 
+                the world is gonna need Americans just 
+                like you to build a better day after."
+            </p>   
+        </div>
+
             <div class="flex justify-center">
-                <img src="/imgs/vault_boy_invertido.png" class="h-[30rem] w-[200rem]" alt="Vault Boy">
+                <img src="/imgs/vault_boy.png" class="h-[30rem] w-[200rem]" alt="Vault Boy">
             </div>
             
-            <div class="text-center md:text-right lg:text-right mb-4 max-w-4xl mx-auto">
-                <p class="text-white font-bold mx-4 sm:mx-8 text-3xl sm:text-4xl lg:text-5xl
-                text-center duration-1000 leading-relaxed mt-6 sm:mt-8 uppercase">"If the worst should happen tomorrow, 
-                    the world is gonna need Americans just 
-                    like you to build a better day after."
-                </p>   
-            </div>
         </div>
 
 
         <!--Vaults-->
 
-        <div class="bg-white flex flex-col sm:flex-row w-full h-auto sm:h-80 m-6 sm:m-14">
+        <div class="bg-white flex flex-col sm:flex-row items-center justify-between
+         w-full h-auto sm:h-80 mt-20 relative">
 
-            <button class="sm:absolute sm:left-0 sm:transform sm:-translate-y-1/2
-            px-4 py-2 rounded-1-md mb-2 sm:mb-0"><img src="/imgs/setaE.png" alt="Anterior" class="h-6 w-6"></button>
+            <!--Tela Grande-->
+            <button class="hidden sm:block absolute left-2 transform -translate-y-1/2
+            px-2 py-2 mb-2 sm:mb-0"><img src="/imgs/setaE.png" alt="Anterior" class="h-14 w-14"></button>
+            
                 
-            <div class="flex flex-col sm:flex-row justify-center items-center w-full">
-                <img src="/imgs/vault_boy_invertido.png" class="h-28 w-20" alt="Vault Boy">
-                <img src="/imgs/vault_boy_invertido.png" class="h-28 w-20" alt="Vault Boy">
-                <img src="/imgs/vault_boy_invertido.png" class="h-28 w-20" alt="Vault Boy">
-                <img src="/imgs/vault_boy_invertido.png" class="h-28 w-20" alt="Vault Boy">
+            <div class="flex justify-center items-center w-full relative">
+                 <!--Tela Pequena-->
+                 <button class="sm:hidden px-2 py-2 mx-5"><img src="/imgs/setaE_Amarelo.png" alt="Anterior" class="h-10 w-10"></button>
+
+                <img src="/imgs/vault_boy_invertido.png" class="h-52 w-40 mx-2" alt="Vault Boy">            
+
+                <!--Tela Pequena-->
+                <button class="sm:hidden px-2 py-2 mx-5"><img src="/imgs/setaD_Amarelo.png" alt="Anterior" class="h-10 w-10"></button>
             </div>
 
-            <button class="sm:absolute sm:right-0 sm:transform sm:-translate-y-1/2
-            px-4 py-2 rounded-1-md mb-2 sm:mb-0"><img src="/imgs/setaD.png" alt="Próximo" class="h-6 w-6"></button>
+            <!--Tela Grande-->
+            <button class="hidden sm:block absolute right-2 transform -translate-y-1/2
+            px-2 py-2 mb-2 sm:mb-0"><img src="/imgs/setaD.png" alt="Próximo" class="h-14 w-14"></button>
 
         </div>
 

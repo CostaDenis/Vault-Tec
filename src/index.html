@@ -52,28 +52,56 @@
         <!--Vaults-->
 
         <div class="bg-white flex flex-col sm:flex-row items-center justify-between
-         w-full h-auto sm:h-80 mt-20 relative">
+         w-full h-auto sm:h-80 mt-16 mb-16 relative">
 
-            <!--Tela Grande-->
-            <button class="hidden sm:block absolute left-2 transform -translate-y-1/2
-            px-2 py-2 mb-2 sm:mb-0"><img src="/imgs/setaE.png" alt="Anterior" class="h-14 w-14"></button>
+            <!--Tela Grande Anterior-->
+            <button class="hidden sm:block left-2 transform -translate-y-1/2
+            px-2 py-2 mb-2 sm:mb-0 z-10" onclick="prevImage()"><img src="/imgs/setaE.png" alt="Anterior" class="h-14 w-14"></button>
             
                 
             <div class="flex justify-center items-center w-full relative">
-                 <!--Tela Pequena-->
-                 <button class="sm:hidden px-2 py-2 mx-5"><img src="/imgs/setaE_Amarelo.png" alt="Anterior" class="h-10 w-10"></button>
+                 <!--Tela Pequena Anterior-->
+                 <button class="sm:hidden px-2 py-2 mx-5" onclick="prevImage()">
+                    <img src="/imgs/setaE.png" alt="Anterior" class="h-10 w-10"></button>
 
-                <img src="/imgs/vault_boy_invertido.png" class="h-52 w-40 mx-2" alt="Vault Boy">            
+                <img id="imgs" src="/imgs/Vault/vault00.jpg" class="h-[18rem] w-[20rem] sm:h-[24rem] sm:w-[30rem] 
+                md:h-auto md:w-[44rem] md:mx-2 object-cover">         
 
-                <!--Tela Pequena-->
-                <button class="sm:hidden px-2 py-2 mx-5"><img src="/imgs/setaD_Amarelo.png" alt="Anterior" class="h-10 w-10"></button>
+                <!--Tela Pequena Próximo-->
+                <button class="sm:hidden px-2 py-2 mx-5" onclick="nextImage()">
+                    <img src="/imgs/setaD.png" alt="Anterior" class="h-10 w-10"></button>
             </div>
 
-            <!--Tela Grande-->
-            <button class="hidden sm:block absolute right-2 transform -translate-y-1/2
-            px-2 py-2 mb-2 sm:mb-0"><img src="/imgs/setaD.png" alt="Próximo" class="h-14 w-14"></button>
+            <!--Tela Grande Próximo-->
+            <button class="hidden sm:block right-2 transform -translate-y-1/2
+            px-2 py-2 mb-2 sm:mb-0 z-10" onclick="nextImage()"><img src="/imgs/setaD.png" alt="Próximo" class="h-14 w-14"></button>
 
         </div>
+
+        <script>
+
+            const imgs = [
+                "/imgs/Vault/vault00.jpg",
+                "/imgs/Vault/vault01.jpg",
+                "/imgs/Vault/vault02.jpg",
+                "/imgs/Vault/vault03.jpg",
+                "/imgs/Vault/vault04.jpg",
+                "/imgs/Vault/vault05.jpg",
+            ]
+
+            let index = 0;
+            
+            function prevImage(){
+                index = (index === 0) ? imgs.length - 1 : index - 1;
+                document.getElementById("imgs").src = imgs[index];
+            }
+
+            function nextImage(){
+                index = (index === imgs.length - 1) ? 0 : index + 1;
+                document.getElementById("imgs").src = imgs[index];
+            }
+
+        </script>
 
 
         <footer class="bg-blue-950 text-white w-full h-12 sm:h-20">

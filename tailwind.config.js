@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        oldstandard: ['"Old Standard TT"', 'serif'],
+        lemonada: ['"Lemonada"', 'cursive']
+      },
+    },
   },
   plugins: [],
 }

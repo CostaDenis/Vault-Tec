@@ -5,6 +5,14 @@
         <title>Vault-Tec</title>
         <meta charset="UTF-8">
         <link href="output.css" rel="stylesheet">
+        <!--Fonte Old Standard TT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <!--Fonte Lemonada-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -16,17 +24,17 @@
                  md:h-28 cursor-pointer" src="/imgs/vault_tec.png"></span>
 
                   <p class="hidden sm:inline flex-shrink-0 font-bold ml-1 md:ml-6
-                   text-xl md:text-2xl cursor-pointer">VAULT-TEC</p>
+                   text-xl md:text-2xl cursor-pointer font-lemonada">VAULT-TEC</p>
 
                 <div class="w-full flex justify-end">
                     <ul class="flex flex-row md:items-center
                     pl-7 md:py-0 py-4">
                         <li class="mx-4 my-6 md:my-2"><a class="text-lg sm:text-xl md:text-2xl 
-                            duration-500 cursor-pointer font-semibold flex-shrink-0" href="#vaults">Vaults</a></li>
+                            duration-500 cursor-pointer font-semibold flex-shrink-0 font-lemonada" href="#vaults">Vaults</a></li>
                         <li class="mx-4 my-6 md:my-2"><a class="text-lg sm:text-xl md:text-2xl 
-                            duration-500 cursor-pointer font-semibold flex-shrink-0" href="#">Our Products</a></li>
+                            duration-500 cursor-pointer font-semibold flex-shrink-0 font-lemonada" href="#">Our Products</a></li>
                         <li class="mx-6 my-6 md:my-2"><a class="text-lg sm:text-xl md:text-2xl
-                            duration-500 cursor-pointer font-semibold flex-shrink-0" href="#">Vaults</a></li>
+                            duration-500 cursor-pointer font-semibold flex-shrink-0 font-lemonada" href="#">Vaults</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,7 +44,7 @@
 
          <div class="text-center md:text-left lg:text-left mb-4 max-w-4xl mx-auto">
             <p class="text-white font-bold mx-4 sm:mx-8 text-3xl sm:text-4xl lg:text-5xl
-            text-center duration-1000 leading-relaxed mt-6 sm:mt-8 uppercase">"If the worst should happen tomorrow, 
+            text-center duration-1000 leading-relaxed mt-6 sm:mt-8 uppercase font-lemonada">"If the worst should happen tomorrow, 
                 the world is gonna need Americans just 
                 like you to build a better day after."
             </p>   
@@ -81,7 +89,6 @@
         </div>
 
         <script>
-
             const imgs = [
                 "/imgs/Vault/vault00.jpg",
                 "/imgs/Vault/vault01.jpg",
@@ -102,16 +109,42 @@
                 index = (index === imgs.length - 1) ? 0 : index + 1;
                 document.getElementById("imgs").src = imgs[index];
             }
-
         </script>
 
+        <div class="bg-white h-auto w-full
+        mt-24 mb-10">
+
+            <div class="mx-auto px-4">
+                <p class="text-3xl sm:text-4xl md:text-5xl font-lemonada font-bold mb-4
+                text-center">
+                    Discover a Safe Future with Vault-Tec</p>
+    
+                <p class="text-xl sm:text-2xl md:text-4xl font-light font-lemonada mb-10
+                text-justify">Vault-Tec offers the ultimate in safety and comfort for an uncertain future. 
+                    Watch our commercial to see how our vaults are designed to protect you and your family, 
+                    ensuring a new tomorrow even in the most extreme conditions. 
+                    Trust Vault-Tec — your survival is our mission.</p>
+                
+                <div class="flex justify-center">
+                    <video class="w-full max-w-xl h-auto" controls>
+                        <source src="/vdo/Vault_Tec_ad.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>    
+                    
+            </div>
+            
+        </div>
+
+
+    <!--Features-->
     <div class="flex flex-col sm:flex-row sm:flex-wrap w-full h-auto
      justify-between items-start p-4 bg-white">
 
         <div class="w-full sm:w-1/2 lg:w-1/3 mb-4 md:mb-10">
-            <div class="flex"><span class="text-2xl font-bold mr-2">1</span>
-                <div><p class="font-bold">Total Security</p>
-                    <p class="text-base sm:text-lg md:text-xl">
+            <div class="flex"><span class="text-2xl font-bold mr-2 font-lemonada">1</span>
+                <div><p class="font-bold font-lemonada">Total Security</p>
+                    <p class="text-base sm:text-lg md:text-xl font-lemonada">
                     Protection from radiation, mutants, and raiders.</p>
                 </div>
             </div>
@@ -120,9 +153,9 @@
         
         <div class="w-full sm:w-1/2 lg:w-1/3 mb-4 md:mb-10">
 
-            <div class="flex"><span class="text-2xl font-bold mr-2">2</span>
-                <div><p class="font-bold">Self-Sustainability</p>
-                    <p class="text-base sm:text-lg md:text-xl">
+            <div class="flex"><span class="text-2xl font-bold mr-2 font-lemonada">2</span>
+                <div><p class="font-bold font-lemonada">Self-Sustainability</p>
+                    <p class="text-base sm:text-lg md:text-xl font-lemonada">
                     Fresh food, water, and air with advanced systems.</p>
                 </div>
             </div>
@@ -131,9 +164,9 @@
         
         <div class="w-full sm:w-1/2 lg:w-1/3 mb-4 md:mb-10">
             
-            <div class="flex"><span class="text-2xl font-bold mr-2">3</span>
-                <div><p class="font-bold">Comfort</p>
-                    <p class="text-base sm:text-lg md:text-xl">
+            <div class="flex"><span class="text-2xl font-bold mr-2 font-lemonada">3</span>
+                <div><p class="font-bold font-lemonada">Comfort</p>
+                    <p class="text-base sm:text-lg md:text-xl font-lemonada">
                     Modern living spaces, entertainment, and recreation.</p>
                 </div>
             </div>
@@ -142,9 +175,9 @@
 
         <div class="w-full sm:w-1/2 lg:w-1/3 mb-4 md:mb-10">
             
-            <div class="flex"><span class="text-2xl font-bold mr-2">4</span>
-                <div><p class="font-bold">Exclusive Resources</p>
-                    <p class="text-base sm:text-lg md:text-xl">
+            <div class="flex"><span class="text-2xl font-bold mr-2 font-lemonada">4</span>
+                <div><p class="font-bold font-lemonada">Exclusive Resources</p>
+                    <p class="text-base sm:text-lg md:text-xl font-lemonada">
                     Rare gear, weapons, and technology.</p>
                 </div>
             </div>
@@ -153,9 +186,9 @@
         
         <div class="w-full sm:w-1/2 lg:w-1/3 mb-4 md:mb-10">
             
-            <div class="flex"><span class="text-2xl font-bold mr-2">5</span>
-                <div><p class="font-bold">Community</p>
-                    <p class="text-base sm:text-lg md:text-xl">
+            <div class="flex"><span class="text-2xl font-bold mr-2 font-lemonada">5</span>
+                <div><p class="font-bold font-lemonada">Community</p>
+                    <p class="text-base sm:text-lg md:text-xl font-lemonada">
                     Forge alliances with elite survivors to rebuild society.</p>
                 </div>
             </div>
@@ -164,9 +197,9 @@
         
         <div class="w-full sm:w-1/2 lg:w-1/3 mb-4 md:mb-10">
             
-            <div class="flex"><span class="text-2xl font-bold mr-2">6</span>
-                <div><p class="font-bold">Future Ready</p>
-                    <p class="text-base sm:text-lg md:text-xl">
+            <div class="flex"><span class="text-2xl font-bold mr-2 font-lemonada">6</span>
+                <div><p class="font-bold font-lemonada">Future Ready</p>
+                    <p class="text-base sm:text-lg md:text-xl font-lemonada">
                     Be prepared to emerge and lead the new world.</p>
                 </div>
             </div>

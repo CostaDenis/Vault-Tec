@@ -208,6 +208,62 @@
 
     </div>
 
+    <!-- Mapa Vaults -->
+    <div class="bg-yellow-200 h-auto">
+        <h3 class="text-3xl sm:text-4xl md:text-5xl font-lemonada font-bold mb-4 mx-2">
+            Welcome to the Vaults!</h3>
+
+        <p class="text-lg sm:text-xl md:text-2xl font-light font-lemonada mb-10
+        text-justify mx-2">Explore the intriguing world of Fallout through this interactive map, 
+            showcasing the locations of the various Vaults scattered across the wasteland. 
+            Each Vault holds its own unique story and secrets, from experimental living conditions to 
+            hidden treasures. Dive into the lore and discover what lies beneath the surface of these 
+            iconic shelters!</p>
+        <div class="flex md:justify-center mt-2 sm:mt-4 md:mt-6 lg:mt-8">
+            
+            <svg class="w-full h-auto max-w-2xl" viewBox="0 0 1000 600">
+                <image href="/imgs/mapa/usa-map.svg" width="1000" height="600" />
+    
+                <circle cx="180" cy="100" r="5" fill="blue" class="vault-marker" /> <!-- Seattle -->
+                <circle cx="210" cy="150" r="5" fill="blue" class="vault-marker" /> <!-- Portland -->
+                <circle cx="250" cy="120" r="5" fill="blue" class="vault-marker" /> <!-- Sacramento -->
+                <circle cx="260" cy="180" r="5" fill="blue" class="vault-marker" /> <!-- Las Vegas -->
+                <circle cx="280" cy="230" r="5" fill="blue" class="vault-marker" /> <!-- Los Angeles -->
+                <circle cx="310" cy="150" r="5" fill="blue" class="vault-marker" /> <!-- Phoenix -->
+                <circle cx="350" cy="100" r="5" fill="blue" class="vault-marker" /> <!-- Denver -->
+                <circle cx="380" cy="180" r="5" fill="blue" class="vault-marker" /> <!-- Albuquerque -->
+                <circle cx="420" cy="130" r="5" fill="blue" class="vault-marker" /> <!-- Dallas -->
+                <circle cx="460" cy="200" r="5" fill="blue" class="vault-marker" /> <!-- Tulsa -->
+                <circle cx="510" cy="100" r="5" fill="blue" class="vault-marker" /> <!-- Omaha -->
+                <circle cx="530" cy="140" r="5" fill="blue" class="vault-marker" /> <!-- Minneapolis -->
+                <circle cx="570" cy="110" r="5" fill="blue" class="vault-marker" /> <!-- Chicago -->
+                <circle cx="620" cy="170" r="5" fill="blue" class="vault-marker" /> <!-- Atlanta -->
+                <circle cx="650" cy="80" r="5" fill="blue" class="vault-marker" /> <!-- Boston -->
+                <circle cx="680" cy="120" r="5" fill="blue" class="vault-marker" /> <!-- New York -->
+                <circle cx="710" cy="160" r="5" fill="blue" class="vault-marker" /> <!-- Washington -->
+                <circle cx="750" cy="220" r="5" fill="blue" class="vault-marker" /> <!-- Charlotte -->
+                <circle cx="800" cy="250" r="5" fill="blue" class="vault-marker" /> <!-- Jacksonville -->
+                <circle cx="830" cy="280" r="5" fill="blue" class="vault-marker" /> <!-- Miami -->
+    
+            </svg>
+    
+            <style>
+                .vault-marker {
+                    cursor: pointer;
+                }
+            </style>
+    
+            <script>
+                document.querySelectorAll('.vault-marker').forEach(marker => {
+                    marker.addEventListener('click', function() {
+                        alert("Vault Location: " + marker.getAttribute("data-city"));
+                    });
+                });
+            </script>
+        </div>
+    </div>
+
+    </div>
         <footer class="bg-blue-950 text-white w-full h-12 sm:h-20">
             DenisDenisDenisDenisDenisDenisDenisDenisDenisDenisDenis
         </footer>

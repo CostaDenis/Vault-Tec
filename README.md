@@ -12,6 +12,10 @@ Acesse <a href="https://costadenis.github.io/Vault-Tec/">aqui</a>
 - Tailwind CSS: Framework para estilização customizável
 - JavaScript: Para interatividade do carousel de imagens
 
+## Objetivos do projeto
+- Prática de HTML
+- Exploração do Tailwind CSS
+
 ## Como Rodar o Projeto Localmente
 Clone o repositório:
   ```bash

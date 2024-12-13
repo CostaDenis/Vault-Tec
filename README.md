@@ -5,7 +5,7 @@ Desenvolvi este site com o objetivo de praticar HTML e, principalmente, começar
 ## Preview
 
 ![image](https://github.com/user-attachments/assets/287931bf-fc79-4bb3-b15e-7f3889773de8)
-Acesse <a href="https://costadenis.github.io/Vault-Tec/">aqui</a>
+Acesse o site <a href="https://costadenis.github.io/Vault-Tec/">aqui</a>
 
 ## Tecnologias Utilizadas
 - HTML5: Estruturação da página

@@ -5,7 +5,7 @@
 <head>
     <title>Vault-Tec</title>
     <meta charset="UTF-8">
-    <link href="output.css" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
     <!--Fonte Lemonada-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
             justify-between items-center w-full">
 
         <span class="flex justify-center items-center"><img class="h-20 min-w-16 sm:h-24
-                 md:h-28 cursor-pointer" src="/docs/imgs/vault_tec.png"></span>
+                 md:h-28 cursor-pointer" src="imgs/vault_tec.png"></span>
 
         <p class="hidden sm:inline flex-shrink-0 font-bold ml-1 md:ml-6
                    text-xl md:text-2xl cursor-pointer font-lemonada">VAULT-TEC</p>
@@ -63,7 +63,7 @@
         </div>
 
         <div class="flex justify-center">
-            <img src="/docs/imgs/vault_boy.png" class="h-[34rem] w-[200rem]" alt="Vault Boy">
+            <img src="imgs/vault_boy.png" class="h-[34rem] w-[200rem]" alt="Vault Boy">
         </div>
 
     </div>
@@ -77,38 +77,38 @@
         <!--Tela Grande Anterior-->
         <button class="hidden sm:block left-2 transform -translate-y-1/2
             px-2 py-2 mb-2 sm:mb-0 z-10" onclick="prevImage()">
-            <img src="/docs/imgs/setaE.png" alt="Anterior" class="h-14 w-14"></button>
+            <img src="imgs/setaE.png" alt="Anterior" class="h-14 w-14"></button>
 
 
         <div class="flex justify-center items-center w-full relative">
             <!--Tela Pequena Anterior-->
             <button class="sm:hidden px-2 py-2 mx-5" onclick="prevImage()">
-                <img src="/docs/imgs/setaE.png" alt="Anterior" class="h-10 w-10"></button>
+                <img src="imgs/setaE.png" alt="Anterior" class="h-10 w-10"></button>
 
             <!--Imagem vault-->
-            <img id="imgs" src="/docs/imgs/Vault/vault00.jpg" class="h-[18rem] w-[20rem] sm:h-[24rem] sm:w-[30rem] 
+            <img id="imgs" src="imgs/Vault/vault00.jpg" class="h-[18rem] w-[20rem] sm:h-[24rem] sm:w-[30rem] 
                 md:h-[30rem] md:w-[60rem] md:mx-2 object-cover">
 
             <!--Tela Pequena Próximo-->
             <button class="sm:hidden px-2 py-2 mx-5" onclick="nextImage()">
-                <img src="/docs/imgs/setaD.png" alt="Anterior" class="h-10 w-10"></button>
+                <img src="imgs/setaD.png" alt="Anterior" class="h-10 w-10"></button>
         </div>
 
         <!--Tela Grande Próximo-->
         <button class="hidden sm:block right-2 transform -translate-y-1/2
             px-2 py-2 mb-2 sm:mb-0 z-10" onclick="nextImage()">
-            <img src="/docs/imgs/setaD.png" alt="Próximo" class="h-14 w-14"></button>
+            <img src="imgs/setaD.png" alt="Próximo" class="h-14 w-14"></button>
 
     </div>
 
     <script>
         const imgs = [
-            "/imgs/Vault/vault00.jpg",
-            "/imgs/Vault/vault01.jpg",
-            "/imgs/Vault/vault02.jpg",
-            "/imgs/Vault/vault03.jpg",
-            "/imgs/Vault/vault04.jpg",
-            "/imgs/Vault/vault05.jpg",
+            "imgs/Vault/vault00.jpg",
+            "imgs/Vault/vault01.jpg",
+            "imgs/Vault/vault02.jpg",
+            "imgs/Vault/vault03.jpg",
+            "imgs/Vault/vault04.jpg",
+            "imgs/Vault/vault05.jpg",
         ]
 
         let index = 0;
@@ -141,7 +141,7 @@
 
         <div class="flex-1 flex justify-center items-center">
             <video class="h-auto w-[25rem] lg:w-[40rem]" controls>
-                <source src="/docs/vdo/Vault_Tec_ad.mp4" type="video/mp4">
+                <source src="vdo/Vault_Tec_ad.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -240,7 +240,7 @@
         <div class="flex md:justify-center mt-2 sm:mt-4 md:mt-6 lg:mt-8">
 
             <svg class="w-full h-auto max-w-2xl" viewBox="0 0 1000 600">
-                <image href="/docs/imgs/mapa/usa-map.svg" width="1000" height="600" />
+                <image href="imgs/mapa/usa-map.svg" width="1000" height="600" />
 
                 <circle cx="180" cy="100" r="5" fill="blue" class="vault-marker" />
                 <circle cx="210" cy="150" r="5" fill="blue" class="vault-marker" />
